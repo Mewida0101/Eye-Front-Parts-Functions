@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>نشاط التوصيل بالخطوط</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <p>
+      صل كل من أجزاء العين المختلفة في العمود الأول بوظيفتها في العمود الثاني
+    </p>
+  </div>
+  <div class="container">
+    <canvas id="connectionsCanvas"></canvas>
+    <canvas id="tempCanvas"></canvas>
+
+    <div class="column" id="rightColumn">
+      <div class="colHead">جزء العين</div>
+      <div class="item item1" data-match="1">القــزحيــة</div>
+      <div class="item item1" data-match="2">الحــدقـــة</div>
+      <div class="item item1" data-match="3">القــرنيـــة</div>
+      <div class="item item1" data-match="4">السائل المائي</div>
+      <div class="item item1" data-match="5">الــعـــدســـة</div>
+      <div class="item item1" data-match="6">الجسم الهدبي</div>
+    </div>
+    <div class="column" id="leftColumn">
+      <div class="colHead">الوظيفة</div>
+      <div class="item item2" data-match="3">غطاء شفاف يكسر الضوء نحو العدسة</div>
+      <div class="item item2" data-match="5">نسيج شفاف يكسر الضوء ويركزه على الشبكية</div>
+      <div class="item item2" data-match="4">يعطي العين شكلها الكروي وتنتقل خلاله المواد الغذائية إلى الأجزاء الأمامية
+        للعين</div>
+      <div class="item item2" data-match="6">يحتوي على عضلات تنقبض وتنبسط لتغيير شكل العدسة وينتج أيضاً السائل المائي
+      </div>
+      <div class="item item2" data-match="1">هي الجزء الملون من العين وتحتوي على عضلات شعاعية ودائرية تتحكم بحجم الحدقة
+      </div>
+      <div class="item item2" data-match="2">ثقب يحدد كمية الضوء الذي يدخل إلى العين، يتسع في الضوء الخافت ويضيق في
+        الضوء الساطع</div>
+    </div>
+
+  </div>
+
+  <button id="checkButton">تحقق من الإجابات</button>
+  <button id="resetButton">إعادة ضبط</button>
+
+  <div class="score-container">
+    Score: <span id="scoreDisplay">0/10</span>
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  user-select: none;
+}
+button {
+  outline: none;
+  font-size: 22px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s;
+}
+button:active {
+  transform: scale(0.99) translate(1px, 1px);
+}
+.header {
+  background-color: lightgreen;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+  ;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(220, 200, 200);
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item {
+  background-color: white;
+  border: 2px solid #007bff;
+  font-size: 24px;
+  max-width: 800px;
+  cursor: pointer;
+}
+.item,
+.colHead {
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+}
+.colHead {
+  max-width: 120px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+  align-self: center;
+  background-color: rgb(143, 143, 115);
+  color: #fff;
+  border: 2px solid #b6dddd;
+}
+.item.selected {
+  background-color: #b8daff;
+}
+.item.correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+.item.incorrect {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+#tempCanvas {
+  pointer-events: none;
+  z-index: 2;
+}
+#checkButton {
+  margin-top: 20px;
+  background-color: #007bff;
+}
+#checkButton:hover {
+  background-color: #0056b3;
+}
+#resetButton {
+  margin-top: 10px;
+  background-color: #6c757d;
+}
+#resetButton:hover {
+  background-color: #5a6268;
+}
+.score-container {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+}
+#scoreDisplay {
+  color: #007bff;
+}
+.show {
+  visibility: visible;
+}
